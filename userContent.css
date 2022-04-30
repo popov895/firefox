@@ -1,0 +1,43 @@
+/* Hide logo and search field on new tab in private windows */
+@-moz-document url-prefix(about:privatebrowsing) {
+    .logo-and-wordmark, .search-inner-wrapper {
+        display: none !important;
+    }
+}
+
+/* Adjust reader mode */
+@-moz-document url-prefix(about:reader?) {
+    body {
+        text-align: justify !important;
+    }
+
+    body.dark {
+        color: #cec4ac !important;
+    }
+
+    body.serif {
+        font-family: "Noto Serif", Calibri, Georgia, "Times New Roman", serif !important;
+    }
+
+    body.sans-serif {
+        font-family: "Noto Sans", Calibri, Helvetica, Arial, sans-serif !important;
+    }
+
+    a {
+        color: inherit !important;
+        border-bottom: 2px solid #0095dd !important;
+        text-decoration: none !important;
+    }
+
+    a:visited {
+        border-bottom-color: #c2e !important;
+    }
+
+    a:hover {
+        color: #0095dd !important;
+    }
+
+    a:visited:hover {
+        color: #c2e !important;
+    }
+}

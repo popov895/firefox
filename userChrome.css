@@ -1,0 +1,85 @@
+/* Menu item height */
+:root {
+    --arrowpanel-menuitem-padding-block: 6px !important;
+}
+
+/* Tab height */
+:root {
+    --tab-min-height: 32px !important;
+}
+
+/* Disable tab secondary label */
+:root .tab-secondary-label {
+    display: none !important;
+}
+
+/* Show soundplaying icon when playing media: variant 1 */
+.tabbrowser-tab:not([pinned], [pendingicon], [busy]):is([soundplaying], [muted], [activemedia-blocked]) .tab-icon-image {
+    opacity: 0 !important;
+}
+
+.tabbrowser-tab:not([pinned], [pendingicon], [busy]):is([soundplaying], [muted], [activemedia-blocked]) .tab-icon-overlay {
+    opacity: 1 !important;
+}
+
+/* Show soundplaying icon when playing media: variant 2 */
+/*.tabbrowser-tab:hover .tab-icon-image {
+    opacity: 1 !important;
+}
+
+.tabbrowser-tab .tab-icon-overlay {
+    border-radius: 10px !important;
+    top: -5.5px !important;
+    inset-inline-end: -6px !important;
+    z-index: 1 !important;
+    padding: 2px !important;
+    stroke: var(--tab-icon-overlay-stroke, black) !important;
+    color: var(--tab-icon-overlay-fill, white) !important;
+}
+
+.tabbrowser-tab:hover .tab-icon-overlay {
+    background-color: var(--tab-icon-overlay-stroke, black) !important;
+}
+
+.tabbrowser-tab:not([crashed]):is([soundplaying], [muted], [activemedia-blocked]) .tab-icon-overlay {
+    opacity: 1 !important;
+}*/
+
+/* Disable enlarging of the megabar */
+/*:root #urlbar[breakout][breakout-extend] {
+    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+    left: 0px !important;
+    width: 100% !important;
+}
+
+:root #urlbar[breakout][breakout-extend] > #urlbar-input-container {
+    height: var(--urlbar-height) !important;
+    padding: 1px !important;
+}*/
+
+/* Disable animation */
+/*:root #urlbar[breakout][breakout-extend] > #urlbar-background {
+    animation: none !important;
+}*/
+
+/* Change title and action font size */
+:root .urlbarView-row .urlbarView-title,
+:root .urlbarView-row .urlbarView-secondary,
+:root .urlbarView-row .urlbarView-url,
+:root .urlbarView-row .urlbarView-action {
+    font-size: inherit !important;
+}
+
+/* Change protections popup UI */
+/*#protections-popup[mainviewshowing][side=top]::part(arrow) {*/
+/*#protections-popup::part(arrow) {
+    fill: var(--arrowpanel-background) !important;
+}
+
+#protections-popup-mainView-panel-header-section {
+    background: inherit !important;
+}
+
+#protections-popup-mainView-panel-header-section + toolbarseparator {
+    display: inherit !important;
+}*/
