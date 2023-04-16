@@ -3,6 +3,11 @@
     --arrowpanel-menuitem-padding-block: 6px !important;
 }
 
+/* Separator height */
+:root menuseparator {
+    height: 2px !important;
+}
+
 /* Tab height */
 :root {
     --tab-min-height: 32px !important;
